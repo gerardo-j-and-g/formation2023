@@ -127,6 +127,7 @@
               "projects/sandbox/src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "projects/sandbox/src/styles.scss"
             ],
             "scripts": []
@@ -190,6 +191,7 @@
               "projects/sandbox/src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "projects/sandbox/src/styles.scss"
             ],
             "scripts": []
