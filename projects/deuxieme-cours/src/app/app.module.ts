@@ -9,15 +9,23 @@ import { Demo02Component } from './components/demos/demo02/demo02.component';
 import { FormsModule } from '@angular/forms';
 import { Demo03Component } from './components/demos/demo03/demo03.component';
 import { Exo03Component } from './exercices/exo03/exo03.component';
-import { FormatTimePipe } from './pipes/format-time.pipe';
+import { FormatTimePipe } from './shared/pipes/format-time.pipe';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, Demo01Component, Demo02Component, Demo03Component, Exo03Component, FormatTimePipe],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    Demo01Component,
+    Demo02Component,
+    Demo03Component,
+    Exo03Component,
+    FormatTimePipe,
+    NavbarComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [
-    FormatTimePipe
-  ],
+  exports: [FormatTimePipe],
 })
 export class AppModule {}

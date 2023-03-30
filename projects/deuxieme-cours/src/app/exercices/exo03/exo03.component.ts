@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class Exo03Component {
   compteur: number = 0;
   interval: any;
-  btnActive: boolean = true;
+  btnActive: boolean = false;
 
   demarrer(): void {
     if (this.interval) return;
@@ -16,12 +16,15 @@ export class Exo03Component {
     this.interval = setInterval(() => {
       this.compteur++;
     }, 1000);
+
+    this.btnActive = true;
   }
   pause(): void {
     if (!this.interval) return;
 
     clearInterval(this.interval);
     this.interval = null;
+    this.btnActive = false;
   }
   reset(): void {
     this.pause();
