@@ -1,0 +1,32 @@
+.calculatrice {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 600px;
+  margin: 42px auto;
+}
+
+.number {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: space-between;
+
+  button {
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: 1em;
+
+  button {
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+}

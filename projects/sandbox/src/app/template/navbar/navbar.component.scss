@@ -1,0 +1,28 @@
+.mat-toolbar {
+  justify-content: space-between;
+}
+
+div > .mat-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+[mat-icon-button] {
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

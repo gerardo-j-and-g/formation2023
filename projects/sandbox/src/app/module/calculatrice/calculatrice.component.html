@@ -1,0 +1,22 @@
+<div class="calculatrice">
+  <div class="number">
+    <mat-form-field appearance="fill">
+      <input matInput placeholder="0" required disabled />
+    </mat-form-field>
+
+    <button
+      mat-fab
+      color="primary"
+      *ngFor="let num of [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '.', 'C']"
+    >
+      {{ num }}
+    </button>
+  </div>
+  <div class="action">
+    <button mat-fab>+</button>
+    <button mat-fab>-</button>
+    <button mat-fab>x</button>
+    <button mat-fab>/</button>
+    <button color="warn" mat-fab>=</button>
+  </div>
+</div>

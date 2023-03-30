@@ -8,15 +8,23 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { NavbarComponent } from './template/navbar/navbar.component';
+import { CalculatriceComponent } from './module/calculatrice/calculatrice.component';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavbarComponent, CalculatriceComponent],
   imports: [
     BrowserModule,
     MatToolbarModule,
     AppRoutingModule,
     MatIconModule,
     MatMenuModule,
+    MatButtonModule,
+    FormsModule,
+    MatInputModule,
     BrowserAnimationsModule,
   ],
   providers: [],
