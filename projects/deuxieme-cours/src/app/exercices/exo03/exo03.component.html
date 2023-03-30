@@ -1,0 +1,12 @@
+<h2>Exercice 03 - Le chronomètre</h2>
+
+<p>Créer une application qui permet de gérer un chronomètre.</p>
+<p>Vous pouvez le démarrer, le mettre sur pause et le reset.</p>
+<p>Astuce : Cherchez du côté de setInterval().</p>
+
+<h3>
+  Valeur du compteur : <i>{{ compteur | formatTime }}</i>
+</h3>
+<button (click)="demarrer()" [disabled]="interval">Démarrer</button>
+<button (click)="pause()" [disabled]="!interval">Pause</button>
+<button (click)="reset()">Reset</button>

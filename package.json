@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start-pc": "ng serve premier-cours --open",
+    "start-dc": "ng serve deuxieme-cours -o",
     "start-s": "ng serve sandbox --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

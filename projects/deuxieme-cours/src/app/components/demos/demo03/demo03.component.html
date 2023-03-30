@@ -1,0 +1,17 @@
+<h2>Demo 03 - Event Binding</h2>
+
+<p>
+  Permet de lier un événement Javascript à une méthode définie dans TypeScript
+</p>
+
+<h3>Click Event (cliquez sur les boutons)</h3>
+<p>Valeur du nombre : {{ nombre }}</p>
+<button (click)="incrementer()">+</button>
+<button (click)="reset()">reset</button>
+<button (click)="decrementer()">-</button>
+
+<h3>Click Event (survolez les boutons)</h3>
+<p>Valeur du nombre : {{ nombre2 }}</p>
+<button (mouseenter)="incrementer2()">+</button>
+<button (mouseenter)="reset2()">reset</button>
+<button (mouseenter)="decrementer2()">-</button>
