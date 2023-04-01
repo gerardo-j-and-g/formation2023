@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,9 +12,16 @@ import { Demo03Component } from './components/demos/demo03/demo03.component';
 import { Exo03Component } from './exercices/exo03/exo03.component';
 import { FormatTimePipe } from './shared/pipes/format-time.pipe';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { Exo07Component } from './exercices/exo07/exo07.component';
+import { CelToFahPipe } from './shared/pipes/cel-to-fah.pipe';
+import { FahToCelPipe } from './shared/pipes/fah-to-cel.pipe';
+import { TemperaturePipe } from './shared/pipes/temperature.pipe';
+import { Exo09Component } from './exercices/exo09/exo09.component';
 
 @NgModule({
   declarations: [
+    // MatMenuModule, // TODO : Fais bug le programme
+
     AppComponent,
     HomeComponent,
     Demo01Component,
@@ -22,10 +30,15 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     Exo03Component,
     FormatTimePipe,
     NavbarComponent,
+    Exo07Component,
+    CelToFahPipe,
+    FahToCelPipe,
+    TemperaturePipe,
+    Exo09Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [FormatTimePipe],
+  exports: [FormatTimePipe, CelToFahPipe],
 })
 export class AppModule {}

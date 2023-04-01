@@ -1,0 +1,10 @@
+<h2>Exercice 07 - Les pipes F et C pour la température</h2>
+
+<p>{{ cel | celToFah }}</p>
+<p>{{ fah | fahToCel }}</p>
+
+<p>{{ cel | temperature : "F" }}</p>
+<p>{{ fah | temperature : "C" }}</p>
+
+<p>{{ cel | temperature : "F" | fahToCel }}</p>
+<p>{{ fah | temperature : "C" | celToFah }}</p>
