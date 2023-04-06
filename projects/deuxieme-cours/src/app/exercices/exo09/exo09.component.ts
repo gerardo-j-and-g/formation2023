@@ -30,10 +30,12 @@ export class Exo09Component {
   }
 
   supprimer(article: Article) {
-    this.listeArticles.splice(
-      this.listeArticles.findIndex((e) => e === article),
-      1
-    );
+    this.listeArticles = this.listeArticles.filter((e) => e !== article);
+
+    // this.listeArticles.splice(
+    //   this.listeArticles.findIndex((e) => e === article),
+    //   1
+    // );
   }
 
   total() {
