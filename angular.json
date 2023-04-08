@@ -20,18 +20,14 @@
             "outputPath": "dist/premier-cours",
             "index": "projects/premier-cours/src/index.html",
             "main": "projects/premier-cours/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/premier-cours/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/premier-cours/src/favicon.ico",
               "projects/premier-cours/src/assets"
             ],
-            "styles": [
-              "projects/premier-cours/src/styles.scss"
-            ],
+            "styles": ["projects/premier-cours/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -82,19 +78,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/premier-cours/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/premier-cours/src/favicon.ico",
               "projects/premier-cours/src/assets"
             ],
-            "styles": [
-              "projects/premier-cours/src/styles.scss"
-            ],
+            "styles": ["projects/premier-cours/src/styles.scss"],
             "scripts": []
           }
         }
@@ -117,9 +108,7 @@
             "outputPath": "dist/sandbox",
             "index": "projects/sandbox/src/index.html",
             "main": "projects/sandbox/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/sandbox/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -180,10 +169,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/sandbox/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -238,18 +224,14 @@
             "outputPath": "dist/deuxieme-cours",
             "index": "projects/deuxieme-cours/src/index.html",
             "main": "projects/deuxieme-cours/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/deuxieme-cours/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/deuxieme-cours/src/favicon.ico",
               "projects/deuxieme-cours/src/assets"
             ],
-            "styles": [
-              "projects/deuxieme-cours/src/styles.scss"
-            ],
+            "styles": ["projects/deuxieme-cours/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -300,19 +282,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/deuxieme-cours/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/deuxieme-cours/src/favicon.ico",
               "projects/deuxieme-cours/src/assets"
             ],
-            "styles": [
-              "projects/deuxieme-cours/src/styles.scss"
-            ],
+            "styles": ["projects/deuxieme-cours/src/styles.scss"],
             "scripts": []
           }
         }
@@ -357,18 +334,14 @@
             "outputPath": "dist/troisieme-cours",
             "index": "projects/troisieme-cours/src/index.html",
             "main": "projects/troisieme-cours/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/troisieme-cours/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/troisieme-cours/src/favicon.ico",
               "projects/troisieme-cours/src/assets"
             ],
-            "styles": [
-              "projects/troisieme-cours/src/styles.scss"
-            ],
+            "styles": ["projects/troisieme-cours/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -419,19 +392,127 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/troisieme-cours/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/troisieme-cours/src/favicon.ico",
               "projects/troisieme-cours/src/assets"
             ],
-            "styles": [
-              "projects/troisieme-cours/src/styles.scss"
+            "styles": ["projects/troisieme-cours/src/styles.scss"],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "udemy-course": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:resolver": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        }
+      },
+      "root": "projects/udemy-course",
+      "sourceRoot": "projects/udemy-course/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/udemy-course",
+            "index": "projects/udemy-course/src/index.html",
+            "main": "projects/udemy-course/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "projects/udemy-course/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/udemy-course/src/favicon.ico",
+              "projects/udemy-course/src/assets"
             ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "projects/udemy-course/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "udemy-course:build:production"
+            },
+            "development": {
+              "browserTarget": "udemy-course:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "udemy-course:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": ["zone.js", "zone.js/testing"],
+            "tsConfig": "projects/udemy-course/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/udemy-course/src/favicon.ico",
+              "projects/udemy-course/src/assets"
+            ],
+            "styles": ["projects/udemy-course/src/styles.scss"],
             "scripts": []
           }
         }

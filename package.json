@@ -6,6 +6,7 @@
     "start-pc": "ng serve premier-cours --open",
     "start-dc": "ng serve deuxieme-cours -o",
     "start-tc": "ng serve troisieme-cours -o",
+    "start-u": "ng serve udemy-course -o",
     "start-s": "ng serve sandbox --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -23,6 +24,7 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "bootstrap": "^5.2.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
